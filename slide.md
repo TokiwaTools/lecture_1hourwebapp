@@ -14,6 +14,8 @@
 - サーバサイド: PHP, Ruby, Java, node.js
 - データベース: SQL
 
+Note: CMPのスライド参照
+
 |||
 
 ### Webアプリケーション
