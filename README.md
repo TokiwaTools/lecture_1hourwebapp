@@ -1,1 +1,1 @@
-# lecture_1hourwebapp
+# 1時間でWebアプリを作る講座
