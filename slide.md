@@ -1,9 +1,10 @@
 ## 目次
 
 1.  [Webのお話](#/2)
-1.	[Google Apps Script](#/3)
-1.  [Hello World](#/4)
-1.  [カツ丼屋Webアプリを作る](#/5)
+1.  [HTMLの学習](#/3)
+1.	[Google Apps Scriptとは](#/4)
+1.  [GASでWebページを作ろう](#/5)
+1.  [カツ丼屋Webアプリを作ろう](#/6)
 
 ---
 
@@ -32,7 +33,13 @@ Note: CMPのスライド参照
 
 ---
 
-## 2. [Google Apps Script](https://developers.google.com/apps-script/) (GAS) ![](images/gas-icon.png)
+## 2. HTMLの学習
+
+#### うんのくんに交代
+
+---
+
+## 3. [Google Apps Scriptとは](https://developers.google.com/apps-script/) (GAS) ![](images/gas-icon.png)
 
 - **JavaScript**でGoogleのAPIを使える環境
 - ブラウザ上で完結し環境構築不要
@@ -114,8 +121,25 @@ Note:
 
 ---
 
-## 3. [Hello World](https://tonari-it.com/gas-web-application-beginner/)
+## 4. [GASでWebページを作ろう](https://tonari-it.com/gas-web-application-beginner/)
+
+### 必要なもの
+- Googleアカウント
+- ブラウザ
+
+### [START](https://script.google.com)
 
 ---
 
-## 4. カツ丼屋Webアプリを作る
+## 5. カツ丼屋Webアプリを作ろう
+
+### [カツ丼屋](https://docs.google.com/spreadsheets/d/1fvfUGvMu-0BC8szunT2Uz6ti34XpdKEl3lnhHNupOG8/edit?usp=sharing)の仕組み
+
+1. [Googleカレンダー](https://calendar.google.com/calendar/embed?src=nh5ooleis1bba0fu6j3n2oaacc%40group.calendar.google.com&ctz=Asia/Tokyo)から活動教室のイベントを取得
+    - タイトル: `2限～昼 @208` (@以下が教室番号)
+    - 場所: `208` (教室番号)
+    - 説明: `(教室規模: 小教室)`
+    - 使うのは「場所」と「期間」だけ
+2. イベントの期間から時限に変換
+    - 10:50～13:30 = 2限～昼
+3. スプレッドシートにお品書きを生成
